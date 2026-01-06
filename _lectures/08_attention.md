@@ -1,4 +1,4 @@
----
+<!-- ---
 type: lecture
 date: 2025-11-08T8:00:00+5:30
 title: Attention
@@ -7,4 +7,4 @@ tldr: The lecture introduces self-attention and multi-head attention as mechanis
 links: 
     - url: /static_files/presentations/Lec-564-Attention.pdf
       name: slides
----
+--- -->

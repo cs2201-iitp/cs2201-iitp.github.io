@@ -1,12 +1,12 @@
 # Site settings
-course_name: "CS564: Machine Learning"
-course_description: "Course website for CS564 at IIT Patna. Contains lectures, assignments, and announcements."
+course_name: "CS2201: Formal Languages and Automata Theory"
+course_description: "Course website for CS2201 at IIT Patna. Contains lectures, assignments, and announcements."
 
 course_semester: "Fall 2025"
 
 # Update for your repo
 baseurl: "" # since this is a GitHub Pages project site, leave empty unless hosted under subpath
-url: "https://cs564-iitp.github.io" # the base hostname & protocol for your site
+url: "https://cs2201-iitp.github.io" # the base hostname & protocol for your site
 
 schoolname: "Indian Institute of Technology Patna"
 schoolurl: "https://www.iitp.ac.in"

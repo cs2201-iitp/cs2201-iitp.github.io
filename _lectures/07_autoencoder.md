@@ -1,4 +1,4 @@
----
+<!-- ---
 type: lecture
 date: 2025-11-03T8:00:00+5:30
 title: Autoencoder
@@ -7,4 +7,4 @@ tldr: Autoencoders learn compressed representations by encoding inputs into a la
 links: 
     - url: /static_files/presentations/Lecture-Autoencoders-CS564-Part1.pdf
       name: slides
----
+--- -->

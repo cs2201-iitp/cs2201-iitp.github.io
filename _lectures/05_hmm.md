@@ -1,4 +1,4 @@
----
+<!-- ---
 
 type: lecture
 date: 2025-10-13T8:00:00+5:30
@@ -9,4 +9,4 @@ tldr: Discusses Sequence to Sequence models; Hidden Markov Models
 links: 
     - url: /static_files/presentations/Lec--SeqLearning-HMM-October-2025.pdf
       name: slides
----
+--- -->

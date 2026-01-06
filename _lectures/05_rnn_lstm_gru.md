@@ -1,4 +1,4 @@
----
+<!-- ---
 
 type: lecture
 date: 2025-10-15T8:00:00+5:30
@@ -9,4 +9,4 @@ tldr: RNNs model sequential data by maintaining hidden states over time, enablin
 links: 
     - url: /static_files/presentations/CS564-RNN-LSTM-GRU.pdf
       name: slides
----
+--- -->

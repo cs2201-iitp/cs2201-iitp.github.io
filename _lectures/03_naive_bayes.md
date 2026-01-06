@@ -1,4 +1,4 @@
----
+<!-- ---
 type: lecture
 date: 2025-09-19T8:00:00+5:30
 title: Naive Bayes
@@ -7,4 +7,4 @@ tldr: The document introduces supervised machine learning with a focus on text c
 links: 
     - url: /static_files/presentations/CS564-naiveBayes.pdf
       name: slides
----
+--- -->

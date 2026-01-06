@@ -1,4 +1,4 @@
----
+<!-- ---
 type: lecture
 date: 2025-08-27T8:00:00+5:30
 title: Introduction
@@ -7,4 +7,4 @@ tldr: An overview lecture introducing Artificial Intelligence and Machine Learni
 links: 
     - url: /static_files/presentations/Lec1-Introduction-ML-august-2025.pdf
       name: slides
----
+--- -->

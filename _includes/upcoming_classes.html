@@ -1,44 +1,60 @@
 <script>
-    (function () {
-      // Wed=3, Thu=4, Fri=5
-      const WANTED = new Set([3,4,5]);
-      const VENUE_BY_DAY = {
-        3: 'R107',   // Wednesday
-        4: 'LT002',  // Thursday
-        5: 'LT001'   // Friday
-      };
-    
-      const root = document.currentScript.parentElement; // <ul> wrapper
-    
-      const fmtDate = new Intl.DateTimeFormat(undefined, { year: 'numeric', month: 'long', day: 'numeric' });
-      const fmtDay  = new Intl.DateTimeFormat(undefined, { weekday: 'long' });
-    
-      const now = new Date();
-      const today = new Date(now); today.setHours(0,0,0,0);
-    
-      const next = [];
-      for (let i = 0; next.length < 3; i++) {
-        const d = new Date(today.getTime() + i*86400000);
-    
-        // Skip today if it's already past 3 PM
-        if (d.getTime() === today.getTime() && now.getHours() >= 15) continue;
-    
-        if (WANTED.has(d.getDay())) next.push(d);
-      }
-    
-      const rowsHTML = next.map(d => `
-        <li class="table-row">
-          <div class="col col-1" data-label="Event">Lecture</div>
-          <div class="col col-1-2" data-label="Date">
-            ${fmtDate.format(d)}
-            <br class="date-spliter"/>${fmtDay.format(d)}
-          </div>
-          <div class="col col-1-2" data-label="Time">2:00&nbsp;PM – 2:55&nbsp;PM</div>
-          <div class="col col-1-2" data-label="Venue">${VENUE_BY_DAY[d.getDay()] || ''}</div>
-        </li>
-      `).join('');
-    
-      root.insertAdjacentHTML('beforeend', rowsHTML);
-    })();
-    </script>
-    
+  (function () {
+    // Tue=2, Wed=3, Thu=4
+    const WANTED = new Set([2, 3, 4]);
+  
+    const VENUE_BY_DAY = {
+      2: 'LT001',   // Tuesday
+      3: 'LT001',  // Wednesday
+      4: 'LT001'   // Thursday
+    };
+  
+    const TIME_BY_DAY = {
+      2: '11:00&nbsp;AM – 11:55&nbsp;AM', // Tuesday
+      3: '11:00&nbsp;AM – 11:55&nbsp;AM', // Wednesday
+      4: '10:00&nbsp;AM – 10:55&nbsp;AM'  // Thursday
+    };
+  
+    const root = document.currentScript.parentElement; // <ul> wrapper
+  
+    const fmtDate = new Intl.DateTimeFormat(undefined, {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
+    });
+    const fmtDay = new Intl.DateTimeFormat(undefined, { weekday: 'long' });
+  
+    const now = new Date();
+    const today = new Date(now);
+    today.setHours(0, 0, 0, 0);
+  
+    const next = [];
+    for (let i = 0; next.length < 3; i++) {
+      const d = new Date(today.getTime() + i * 86400000);
+  
+      // Skip today if it's already past 11 PM
+      if (d.getTime() === today.getTime() && now.getHours() >= 12) continue;
+  
+      if (WANTED.has(d.getDay())) next.push(d);
+    }
+  
+    const rowsHTML = next.map(d => `
+      <li class="table-row">
+        <div class="col col-1" data-label="Event">Lecture</div>
+        <div class="col col-1-2" data-label="Date">
+          ${fmtDate.format(d)}
+          <br class="date-spliter"/>${fmtDay.format(d)}
+        </div>
+        <div class="col col-1-2" data-label="Time">
+          ${TIME_BY_DAY[d.getDay()] || ''}
+        </div>
+        <div class="col col-1-2" data-label="Venue">
+          ${VENUE_BY_DAY[d.getDay()] || ''}
+        </div>
+      </li>
+    `).join('');
+  
+    root.insertAdjacentHTML('beforeend', rowsHTML);
+  })();
+  </script>
+  

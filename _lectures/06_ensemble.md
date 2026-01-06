@@ -1,4 +1,4 @@
----
+<!-- ---
 type: lecture
 date: 2025-10-18T8:00:00+5:30
 title: Ensemble
@@ -7,4 +7,4 @@ tldr: Introduces ensemble learning to combine multiple models for improved gener
 links: 
     - url: /static_files/presentations/CS564-Ensemble.pdf
       name: slides
----
+--- -->

@@ -1,4 +1,4 @@
----
+<!-- ---
 type: lecture
 date: 2025-08-28T8:00:00+5:30
 title: Decision Tree
@@ -7,4 +7,4 @@ tldr: A detailed lecture on decision tree learning, explaining classification ta
 links: 
     - url: /static_files/presentations/Lec-Decision-Tree-2025.pdf
       name: slides
----
+--- -->

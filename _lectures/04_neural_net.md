@@ -1,4 +1,4 @@
----
+<!-- ---
 type: lecture
 date: 2025-09-20T8:00:00+5:30
 title: Basics of Neural Networks
@@ -7,4 +7,4 @@ tldr: The document introduces connectionist AI, biological inspiration of neuron
 links: 
     - url: /static_files/presentations/CS564-BasicsNN.pdf
       name: slides
----
+--- -->

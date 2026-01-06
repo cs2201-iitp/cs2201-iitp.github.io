@@ -1,4 +1,4 @@
----
+<!-- ---
 type: assignment
 date: 2025-10-28T4:00:00+5:30
 title: 'Assignment #3 - Neural Networks'
@@ -9,4 +9,4 @@ due_event:
     date: 2025-11-06T23:59:59+5:30
     description: 'Assignment #3 due'
 ---
-Please submit the assignment as Roll1_Roll2_Roll3.ipynb
+Please submit the assignment as Roll1_Roll2_Roll3.ipynb -->
