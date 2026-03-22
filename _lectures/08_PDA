@@ -1,0 +1,11 @@
+
+---
+type: lecture
+date: 2026-01-17T8:00:00+5:30
+title: Finite Automata
+thumbnail: /static_files/presentations/pda.png
+tldr: The document covers the fundamentals of Pushdown Automata (PDA).
+links: 
+    - url: /static_files/presentations/Lect-PDA.pdf
+      name: slides
+---
