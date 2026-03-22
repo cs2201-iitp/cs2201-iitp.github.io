@@ -1,10 +1,10 @@
 
 ---
 type: lecture
-date: 2026-01-22T8:00:00+7:23
+date: 2026-01-22T8:00:00+7:27
 title: Pushdown Automata
 thumbnail: /static_files/presentations/pda.png
-tldr: The document covers the fundamentals of Pushdown Automata (PDA).
+tldr: The document covers the fundamentals of Pushdown Automata (PDA)..
 links: 
     - url: /static_files/presentations/Lect-PDA.pdf
       name: slides
